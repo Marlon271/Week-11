@@ -7,63 +7,63 @@ const presentationData = {
       {
         number: 1,
         title: "Crear nuevo producto",
-        src: "./1/1.mp4",
+        src: "./Videos/1.mp4",
         copy: "El catalogo nace desde una sola plataforma y deja claro como inicia la gestion del producto.",
         value: "Demuestra control desde el primer paso del flujo administrativo."
       },
       {
         number: 2,
         title: "Modificar producto",
-        src: "./1/2.mp4",
+        src: "./Videos/2.mp4",
         copy: "Actualizar un medicamento deja de ser una tarea dispersa y pasa a ser una accion rapida y controlada.",
         value: "La informacion critica del negocio se corrige sin perder orden."
       },
       {
         number: 3,
         title: "Eliminar producto",
-        src: "./1/3.mp4",
+        src: "./Videos/3.mp4",
         copy: "La depuracion del catalogo evita ruido y mantiene visibles solo las referencias que si importan.",
         value: "Menos desorden en pantalla, mas claridad para operar."
       },
       {
         number: 4,
         title: "Crear usuario e ingresar",
-        src: "./1/4.mp4",
+        src: "./Videos/4.mp4",
         copy: "La incorporacion de personal autorizado se ve clara y guiada desde el sistema.",
         value: "El acceso deja de depender de procesos informales."
       },
       {
         number: 5,
         title: "Bloquear usuario",
-        src: "./1/5.mp4",
+        src: "./Videos/5.mp4",
         copy: "Cuando hay riesgo, el sistema permite actuar de inmediato sobre la cuenta correcta.",
         value: "Seguridad visible para el negocio."
       },
       {
         number: 6,
         title: "Modificar usuario y cambiar contrasena",
-        src: "./1/6.mp4",
+        src: "./Videos/6.mp4",
         copy: "La gestion de credenciales se mantiene viva, no abandonada despues de crear la cuenta.",
         value: "Gobierno continuo del acceso."
       },
       {
         number: 7,
         title: "Movimientos por filtros",
-        src: "./1/7.mp4",
+        src: "./Videos/7.mp4",
         copy: "La trazabilidad ya no depende de memoria ni de revisar muchas fuentes distintas.",
         value: "Cada movimiento se vuelve evidencia."
       },
       {
         number: 8,
         title: "Reportes y Excel",
-        src: "./1/8.mp4",
+        src: "./Videos/8.mp4",
         copy: "La operacion puede convertirse en reporte rapido para seguimiento y soporte documental.",
         value: "Informacion lista para analizar y compartir."
       },
       {
         number: 9,
         title: "Alertas",
-        src: "./1/9.mp4",
+        src: "./Videos/9.mp4",
         copy: "El sistema ayuda a anticipar problemas en lugar de reaccionar tarde.",
         value: "Mejor prevencion frente a vencimientos y riesgos."
       }
@@ -77,21 +77,21 @@ const presentationData = {
       {
         number: 10,
         title: "Ver inventario",
-        src: "./1/10.mp4",
+        src: "./Videos/10.mp4",
         copy: "El rol operativo entra directo al estado real del inventario y no a una vista confusa.",
         value: "Visibilidad inmediata para trabajar mejor."
       },
       {
         number: 11,
         title: "Realizar entrada",
-        src: "./1/11.mp4",
+        src: "./Videos/11.mp4",
         copy: "Cuando llegan medicamentos, el sistema registra el cambio y lo integra al control del stock.",
         value: "La reposicion queda reflejada de inmediato."
       },
       {
         number: 12,
         title: "Realizar salida",
-        src: "./1/12.mp4",
+        src: "./Videos/12.mp4",
         copy: "El despacho deja huella y mantiene trazabilidad sobre lo que realmente salio.",
         value: "Menos errores en la operacion diaria."
       }
@@ -105,21 +105,21 @@ const presentationData = {
       {
         number: 13,
         title: "Ver inventario",
-        src: "./1/13.mp4",
+        src: "./Videos/13.mp4",
         copy: "El rol de auditoria revisa el estado del sistema sin depender del mismo flujo operativo.",
         value: "Control independiente y entendible."
       },
       {
         number: 14,
         title: "Movimientos por filtros",
-        src: "./1/14.mp4",
+        src: "./Videos/14.mp4",
         copy: "La revision historica permite validar responsables, consistencia y contexto de cada accion.",
         value: "Trazabilidad lista para inspeccion."
       },
       {
         number: 15,
         title: "Reportes",
-        src: "./1/15.mp4",
+        src: "./Videos/15.mp4",
         copy: "La evidencia tambien se resume y se exporta, lo que facilita seguimiento y soporte.",
         value: "El control no se queda solo en pantalla."
       }
@@ -184,7 +184,7 @@ function buildStepButtons(roleKey) {
     button.innerHTML = `
       <strong>Video ${step.number}. ${step.title}</strong>
       <span>${step.value}</span>
-      ${!step.src ? "<small>Archivo pendiente en la carpeta 1.</small>" : ""}
+      ${!step.src ? "<small>Archivo pendiente en la carpeta Videos.</small>" : ""}
     `;
 
     button.addEventListener("click", () => {
@@ -221,7 +221,7 @@ function updateSpotlight(roleKey, stepIndex) {
     spotlightVideo.load();
     spotlightVideo.hidden = true;
     videoEmptyTitle.textContent = "Video no disponible";
-    videoEmptyBody.textContent = "Este clip aun no esta conectado en la carpeta 1.";
+    videoEmptyBody.textContent = "Este clip aun no esta conectado en la carpeta Videos.";
     videoEmpty.hidden = false;
   }
 }
