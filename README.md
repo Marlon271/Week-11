@@ -19,6 +19,7 @@ El objetivo de esta semana no es agregar una funcionalidad aislada nueva dentro 
 ## Tabla de contenido
 
 - [Que cambio desde Week 10](#que-cambio-desde-week-10)
+- [Balance de continuidad entre Weeks 9, 10 y 11](#balance-de-continuidad-entre-weeks-9-10-y-11)
 - [Que incluye este repositorio](#que-incluye-este-repositorio)
 - [Estructura de la presentacion](#estructura-de-la-presentacion)
 - [Evidencias](#evidencias)
@@ -57,6 +58,36 @@ En la **Week 11**, el enfoque cambio desde el cierre de implementacion hacia el 
   - mejor preparacion para entregar
   - comunicacion mas clara para el publico
   - evidencias mas fuertes de despliegue y estabilidad de datos
+
+---
+
+## Balance de continuidad entre Weeks 9, 10 y 11
+
+Esta seccion resume la continuidad del trabajo entre las semanas anteriores y la entrega actual de **Week 11**, tomando como base lo que se documento y consolido en **Weeks 9 y 10**.
+
+### Que se hizo?
+
+- En **Week 9** se organizo la base documental y de trazabilidad para backend y frontend.
+- En backend se consolidaron las historias **HU-007** a **HU-011** con enfoque en alcance, criterios de aceptacion, endpoints y componentes tecnicos.
+- En frontend se validaron y documentaron los flujos QA de **HU-QA-FE-02** y **HU-QA-FE-07**, especialmente autenticacion e historial de movimientos.
+- En **Week 10** se avanzo en el cierre tecnico del bloque backend desde **HU-011** hasta **HU-016**, junto con **HU-AC02** y cambios de ramas de apoyo.
+- Tambien en Week 10 se documentaron y consolidaron en frontend las historias **HU-QA-FE-08** hasta **HU-QA-FE-12**, ampliando la cobertura funcional y de validacion.
+- En **Week 11** no se abrio una historia de usuario aislada nueva, sino que se tomo todo ese avance acumulado y se transformo en una **entrega de Release 2 entendible para publico**.
+- Para ello se construyo una presentacion HTML local con narrativa de producto, videos funcionales por rol, evidencia de ambientes **dev**, **qa** y **main**, trazabilidad hacia **Release.2** y explicacion de **Liquibase** como respaldo de estabilidad y confianza.
+
+### Que falto?
+
+- Aunque Week 10 dejo un cierre fuerte de implementacion y QA, todavia quedaban validaciones integrales de extremo a extremo por robustecer entre backend, frontend y despliegue.
+- Week 11 se concentro en **empaquetar y comunicar** el valor del producto, por lo que no se destino a abrir un nuevo bloque funcional independiente.
+- Sigue siendo importante fortalecer pruebas de regresion completas para asegurar que la consolidacion del release no afecte funcionalidades previas.
+- Tambien queda como paso posterior llevar esta evidencia a un nivel mas cercano a despliegue final o validacion de salida completamente estabilizada.
+
+### Que se hara?
+
+- A partir de esta entrega, el siguiente paso natural es usar la base consolidada de Release 2 para atender retroalimentacion de la demostracion y ajustar detalles funcionales o visuales que se detecten.
+- Se debera continuar con validaciones integradas backend-frontend para confirmar que lo documentado, probado y presentado se mantenga consistente en escenarios reales.
+- Se espera fortalecer aun mas la disciplina de ambientes, la trazabilidad de promotion y el versionado de base de datos para futuras entregas.
+- Si surgen nuevas iteraciones, estas ya partiran de una base mucho mas madura: documentada en Week 9, consolidada tecnicamente en Week 10 y presentada como producto en Week 11.
 
 ---
 
